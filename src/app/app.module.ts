@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
+import { ListItemComponent } from './list-item/list-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,
