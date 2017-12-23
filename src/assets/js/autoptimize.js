@@ -1881,7 +1881,7 @@ jQuery.fn.sortElements = (function () {
         $('#careg_ico').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
       });
     }
-    if (location.pathname.match(/category/gi) == 'category') {
+    if (true) {//location.pathname.match(/category/gi) == 'category'
       $('#careg_ico .categ_new_tabs ul li:not(.active_tab_category)').live('click', function () {
         $('#careg_ico .tabs__caption li:eq(' + $(this).index() + ')').click();
         $(this).addClass('active_tab_category').siblings().removeClass('active_tab_category')
