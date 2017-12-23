@@ -1,4 +1,4 @@
-export class tags{
+export class Tags {
     category_one_status: string;
     category_two_status: string;
     category_three_status: string;

@@ -1,6 +1,6 @@
-import { tags } from './mock-tags'
+import { Tags } from './mock-tags';
 
-export class project{
+export class Project {
     id: number;
     name: string;
     short_des: string;
@@ -12,6 +12,6 @@ export class project{
     goal: string;
     start_date: string;
     end_date: string;
-    tags: tags;
+    tags: Tags;
     is_rated: boolean;
 }
