@@ -6,7 +6,7 @@
         <a id='ccc' href="./detail.html" rel="bookmark" data-id='18366'>
           <div class="pre-icon" *ngIf="project.is_pre_sale">PRE SALE</div>
           <img width="150" height="150" src="//icodrops.com/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" class="lazy-hidden attachment-thumbnail size-thumbnail wp-post-image"
-            alt="Experty" data-src="{{project.image_url}}" data-lazy-type="image"
+            alt="Experty" [attr.data-src]="project.image_url" data-lazy-type="image"
           />
         </a>
       </div>
@@ -42,30 +42,30 @@
         [class.no]="project.tags.category_one_status == 'No'"
         [class.tooltip]="project.tags.category_one_show_tooltip"
         [attr.rel]="project.tags.category_one_tooltip" 
-        [attr.title]="project.tags.category_one_tooltip"></div>
-
-      <div id='linkwhitelist' class='categ_three' 
+        [attr.title]="project.tags.category_one_tooltip"></div><div 
+        
+        id='linkwhitelist' class='categ_three' 
         [class.yes]="project.tags.category_three_status == 'Yes'" 
         [class.no]="project.tags.category_three_status == 'No'"
         [class.tooltip]="project.tags.category_three_show_tooltip"
         [attr.rel]='project.tags.category_three_tooltip' 
-        [attr.title]='project.tags.category_three_tooltip'></div>
-
-      <div class="categ_two" 
+        [attr.title]='project.tags.category_three_tooltip'></div><div 
+        
+        class="categ_two" 
         [class.yes]="project.tags.category_two_status == 'Yes'" 
         [class.no]="project.tags.category_two_status == 'No'"
         [class.tooltip]="project.tags.category_two_show_tooltip"
         [attr.rel]="project.tags.category_two_tooltip" 
-        [attr.title]="project.tags.category_two_tooltip"></div>
-
-      <div class="categ_four" 
+        [attr.title]="project.tags.category_two_tooltip"></div><div 
+        
+        class="categ_four" 
         [class.yes]="project.tags.category_four_status == 'Yes'" 
         [class.no]="project.tags.category_four_status == 'No'"
         [class.tooltip]="project.tags.category_four_show_tooltip"
         [attr.rel]="project.tags.category_four_tooltip" 
-        [attr.title]="project.tags.category_four_tooltip"></div>
-
-      <div class="categ_five" 
+        [attr.title]="project.tags.category_four_tooltip"></div><div 
+        
+        class="categ_five" 
         [class.yes]="project.tags.category_five_status == 'Yes'" 
         [class.no]="project.tags.category_five_status == 'No'"
         [class.tooltip]="project.tags.category_five_show_tooltip"
