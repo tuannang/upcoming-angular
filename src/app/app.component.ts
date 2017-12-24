@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import {projects} from './mock-projects';
+
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,4 @@ import {projects} from './mock-projects';
 })
 export class AppComponent {
   title = 'app';
-  projects = projects;
 }
